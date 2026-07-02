@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c14xsj2bkwbrt"]
+
+[ext_resource type="PackedScene" uid="uid://w8fac00ovbkp" path="res://gui.tscn" id="1_cijwk"]
+[ext_resource type="Script" uid="uid://b5e0tuy5bwans" path="res://player.gd" id="1_p5xin"]
+[ext_resource type="Script" uid="uid://bckf2cjeub4y4" path="res://chunk_loader.gd" id="2_1swmi"]
+[ext_resource type="Environment" uid="uid://bme7opafb3e1s" path="res://world.tres" id="3_adgwq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cijwk"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_a0tk4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_noarx"]
+size = Vector3(1, 2, 75)
+
+[node name="game3d" type="Node3D" unique_id=1401021742]
+
+[node name="GUI" parent="." unique_id=1260856799 instance=ExtResource("1_cijwk")]
+
+[node name="player" type="CharacterBody3D" parent="." unique_id=1516345063]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+script = ExtResource("1_p5xin")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=2111445578]
+shape = SubResource("BoxShape3D_cijwk")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player" unique_id=359478417]
+mesh = SubResource("CapsuleMesh_a0tk4")
+
+[node name="Head" type="Node3D" parent="player" unique_id=1296331848]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.548, -0.17217961)
+
+[node name="Camera3D" type="Camera3D" parent="player/Head" unique_id=138008979]
+
+[node name="interactionRay" type="RayCast3D" parent="player" unique_id=2138289232]
+
+[node name="OrthoRig" type="Node3D" parent="player" unique_id=1500890757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35)
+
+[node name="OrthoCamera" type="Camera3D" parent="player/OrthoRig" unique_id=1818247341]
+projection = 1
+size = 5.0
+
+[node name="BoxCollisionShape" type="CollisionShape3D" parent="player" unique_id=1211033611]
+shape = SubResource("BoxShape3D_noarx")
+disabled = true
+debug_color = Color(0, 0.6, 0.69803923, 0.8509804)
+
+[node name="testCam" type="Camera3D" parent="player" unique_id=223629094]
+transform = Transform3D(0.785393, 0.11267266, -0.6086565, 0.0020529819, 0.9828145, 0.18458478, 0.61899406, -0.14622115, 0.7716643, -10.352931, 5.0142384, 12.920437)
+fov = 60.3
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=492012544]
+environment = ExtResource("3_adgwq")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=198478749]
+transform = Transform3D(0.7714025, -0.5788626, 0.26430327, 0, 0.4153443, 0.9096644, -0.6363476, -0.7017174, 0.32039762, 11.351034, 40, 15.021802)
+light_energy = 0.556
+light_volumetric_fog_energy = 0.0
+shadow_enabled = true
+
+[node name="ChunkLoader" type="Node3D" parent="." unique_id=1908154754]
+script = ExtResource("2_1swmi")
+
+[node name="LoadedChunks" type="Node3D" parent="." unique_id=2120682626]

@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://ctba0ypdh7ri3"]
+
+[ext_resource type="Script" uid="uid://cqdulj30k0774" path="res://addons/2024_10_16_gdp_blocks_color/script/blocks_color_rotate_show.gd" id="1_4gcg4"]
+[ext_resource type="PackedScene" uid="uid://bugjqxg5lf6pf" path="res://addons/2024_10_16_gdp_blocks_color/scene/element/blocks_color.tscn" id="1_5nbnw"]
+[ext_resource type="PackedScene" uid="uid://btcuo0txccuyh" path="res://addons/2024_10_16_gdp_blocks_color/scene/element/block_color_lit.tscn" id="3_5x8d4"]
+[ext_resource type="PackedScene" uid="uid://2tspkc73rvcc" path="res://addons/2024_10_16_gdp_blocks_color/scene/element/block_color_unlit.tscn" id="4_4op0d"]
+[ext_resource type="Script" uid="uid://1o7p2facmacq" path="res://addons/2024_10_16_gdp_blocks_color/script/blocks_color_how_to_use_code.gd" id="5_4op0d"]
+[ext_resource type="Resource" uid="uid://8g7ebq01ua4s" path="res://addons/2024_10_16_gdp_blocks_color/resource/block_color_group.tres" id="6_5e51m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5x8d4"]
+
+[sub_resource type="Environment" id="Environment_5e51m"]
+background_mode = 1
+background_color = Color(0.99947315, 0.7694286, 0.5757936, 1)
+ambient_light_source = 1
+
+[node name="DemoBlocks" type="Node3D" unique_id=1151627741]
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1558603629 node_paths=PackedStringArray("what_to_rotate")]
+script = ExtResource("1_4gcg4")
+what_to_rotate = NodePath(".")
+
+[node name="Blocks Color2" type="Node3D" parent="Node3D" unique_id=673683776]
+
+[node name="Blocks Color" parent="Node3D/Blocks Color2" unique_id=1647711849 instance=ExtResource("1_5nbnw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09957309, 5.1652086e-07, -0.09957015)
+
+[node name="Block Color Lit" parent="." unique_id=1620655474 instance=ExtResource("3_5x8d4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.814331, 0, -1.6436768)
+
+[node name="Block Color Unlit" parent="." unique_id=200363290 instance=ExtResource("4_4op0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9885254, 0, -1.6436768)
+
+[node name="HowToUseCode" type="Node3D" parent="." unique_id=230424359 node_paths=PackedStringArray("label", "mesh_material")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0244141, 0, -0.17480469)
+script = ExtResource("5_4op0d")
+color_to_use = ExtResource("6_5e51m")
+label = NodePath("CanvasLayer/LabelTestCube")
+label_color = 17
+mesh_material = NodePath("SampleTestCube")
+use_lit = true
+material_color = 20
+
+[node name="CanvasLayer" type="CanvasLayer" parent="HowToUseCode" unique_id=587531099]
+
+[node name="LabelTestCube" type="Label" parent="HowToUseCode/CanvasLayer" unique_id=501342499]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.113000005
+offset_left = 23.0
+offset_right = -17.0
+offset_bottom = -10.224007
+text = "Color"
+vertical_alignment = 1
+uppercase = true
+
+[node name="SampleTestCube" type="MeshInstance3D" parent="HowToUseCode" unique_id=754330081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.652771, 0, 0)
+mesh = SubResource("BoxMesh_5x8d4")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2105186778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5328369, 1.626831, 3.7161865)
+environment = SubResource("Environment_5e51m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1945327224]
+transform = Transform3D(0.39777243, -0.14754194, 0.9055432, -0.63929343, 0.66336924, 0.38890263, -0.65808886, -0.7336026, 0.16954741, 0, 4.890991, 5.3652344)
+light_energy = 1.883
+light_indirect_energy = 1.241
+directional_shadow_fade_start = 0.525
+directional_shadow_max_distance = 4.3
+directional_shadow_pancake_size = 8.2
+sky_mode = 1

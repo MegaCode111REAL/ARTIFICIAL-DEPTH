@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dtipbtthtpa3s"]
+
+[resource]
+resource_name = "Mat_Unlit_25Green"
+shading_mode = 0
+albedo_color = Color(0.35686275, 0.7686276, 0.38039216, 1)

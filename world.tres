@@ -1,0 +1,41 @@
+[gd_resource type="Environment" format=3 uid="uid://bme7opafb3e1s"]
+
+[ext_resource type="Texture2D" uid="uid://1o7olr7ergm8" path="res://NightSkyHDRI016B_1K_TONEMAPPED.jpg" id="1_dbpwn"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_p044t"]
+panorama = ExtResource("1_dbpwn")
+energy_multiplier = 0.3
+
+[sub_resource type="Sky" id="Sky_cijwk"]
+sky_material = SubResource("PanoramaSkyMaterial_p044t")
+process_mode = 2
+radiance_size = 0
+
+[resource]
+background_mode = 2
+background_color = Color(0.078431524, 0.03036329, 0.12689379, 1)
+background_energy_multiplier = 0.95
+sky = SubResource("Sky_cijwk")
+ambient_light_source = 3
+ambient_light_color = Color(0.5814944, 0.6790435, 0.8991404, 1)
+ambient_light_energy = 1.28
+reflected_light_source = 2
+tonemap_exposure = 0.9
+ssao_enabled = true
+ssao_radius = 1.15
+ssao_intensity = 2.05
+ssil_enabled = true
+ssil_intensity = 1.15
+glow_enabled = true
+glow_intensity = 1.81
+glow_bloom = 0.15
+fog_enabled = true
+fog_light_color = Color(0.10882328, 0.13843969, 0.16777796, 1)
+fog_sun_scatter = 0.08
+fog_density = 0.0636
+fog_sky_affect = 0.15
+fog_height_density = 1.7325
+volumetric_fog_density = 1.91
+volumetric_fog_emission_energy = 2.35
+volumetric_fog_detail_spread = 0.5
+volumetric_fog_sky_affect = 0.387

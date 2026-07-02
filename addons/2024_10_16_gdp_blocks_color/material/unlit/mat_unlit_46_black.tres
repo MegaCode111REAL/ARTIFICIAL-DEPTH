@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://diq8loxakgr03"]
+
+[resource]
+resource_name = "Mat_Unlit_46Black"
+shading_mode = 0
+albedo_color = Color(0.17647056, 0.18431368, 0.18431368, 1)

@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="BlocksColorResource" format=3 uid="uid://8g7ebq01ua4s"]
+
+[ext_resource type="Script" uid="uid://b8oaacv14t6jj" path="res://addons/2024_10_16_gdp_blocks_color/script/blocks_color_resource.gd" id="1_825ox"]
+[ext_resource type="Material" uid="uid://5atgjfrfiiyf" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_01_yellow.tres" id="1_dhcgc"]
+[ext_resource type="Material" uid="uid://biv7r7eb6nid" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_02_purple.tres" id="2_ds8ug"]
+[ext_resource type="Material" uid="uid://cubhihd8ss3q2" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_03_blue_cyan.tres" id="3_y4qu4"]
+[ext_resource type="Material" uid="uid://bhxq3sealchja" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_04_red.tres" id="4_vut31"]
+[ext_resource type="Material" uid="uid://k4emqdoiqkn" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_05_green.tres" id="5_ce1ri"]
+[ext_resource type="Material" uid="uid://p034ixaicspl" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_06_blue.tres" id="6_c0ggi"]
+[ext_resource type="Material" uid="uid://jrb4lfbgvvob" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_11_light_purple.tres" id="7_ssytv"]
+[ext_resource type="Material" uid="uid://3f3cfwd353an" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_12_dark_purple.tres" id="8_pgw1x"]
+[ext_resource type="Material" uid="uid://dg5c7vvycc2j2" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_13_blue_purple.tres" id="9_xlce7"]
+[ext_resource type="Material" uid="uid://bh030hnqowkqd" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_14_light_blue_cyan.tres" id="10_hbanp"]
+[ext_resource type="Material" uid="uid://dmwuhvx3dgfda" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_15_dark_blue_cyan.tres" id="11_1s0rg"]
+[ext_resource type="Material" uid="uid://cwdqbymnud6o2" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_16_light_blue.tres" id="12_pji4x"]
+[ext_resource type="Material" uid="uid://cns0g46gwe035" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_21_pink.tres" id="13_kkd5w"]
+[ext_resource type="Material" uid="uid://beereyh4iocbb" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_22_hot_pink.tres" id="14_24pe4"]
+[ext_resource type="Material" uid="uid://gomcl5gb7iwl" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_23_ligh_red.tres" id="15_yi0mb"]
+[ext_resource type="Material" uid="uid://ciyungygrlepb" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_24_green_pistache.tres" id="16_oghmb"]
+[ext_resource type="Material" uid="uid://drab4dj8tiji2" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_25_green.tres" id="17_7s8ot"]
+[ext_resource type="Material" uid="uid://rky06oihlfgg" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_26_green_emerald.tres" id="18_itdcl"]
+[ext_resource type="Material" uid="uid://5ejv83thhwiu" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_31_light_yellow.tres" id="19_p120l"]
+[ext_resource type="Material" uid="uid://oe5bgqdbnf66" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_32_orange.tres" id="20_hftw0"]
+[ext_resource type="Material" uid="uid://d2uajwnqw14nf" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_33_red_orange.tres" id="21_frf0j"]
+[ext_resource type="Material" uid="uid://do0vhb21ylyw2" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_34_white_grey.tres" id="22_t5n25"]
+[ext_resource type="Material" uid="uid://3uk2mbct730w" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_35_blue_grey.tres" id="23_ne8i1"]
+[ext_resource type="Material" uid="uid://bbcaqo5kam4ts" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_36_dark_grey.tres" id="24_jglvx"]
+[ext_resource type="Material" uid="uid://cr1ml5rsqbykd" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_41_sand_yellow.tres" id="25_w0ihg"]
+[ext_resource type="Material" uid="uid://0e33n75jk131" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_42_light_orange.tres" id="26_du2v6"]
+[ext_resource type="Material" uid="uid://blytqeajehw57" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_43_brown.tres" id="27_5cshx"]
+[ext_resource type="Material" uid="uid://c3ee5ch5bun7r" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_44_white.tres" id="28_gx8wj"]
+[ext_resource type="Material" uid="uid://e8ejojf4u6dp" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_45_grey.tres" id="29_w8npc"]
+[ext_resource type="Material" uid="uid://phjqjgryk60i" path="res://addons/2024_10_16_gdp_blocks_color/material/lit/mat_lit_46_black.tres" id="30_aah5u"]
+[ext_resource type="Material" uid="uid://b3jiclsf76cdv" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_01_yellow.tres" id="31_icg31"]
+[ext_resource type="Material" uid="uid://dbnfc03hfbbvo" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_02_purple.tres" id="32_w4ygl"]
+[ext_resource type="Material" uid="uid://b2hc3faebl5s3" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_03_blue_cyan.tres" id="33_t2s64"]
+[ext_resource type="Material" uid="uid://j6eldetyu0kk" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_04_red.tres" id="34_vtgqp"]
+[ext_resource type="Material" uid="uid://c2e8adykrlh2k" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_05_green.tres" id="35_dlwoh"]
+[ext_resource type="Material" uid="uid://tsy3r6bxvlrj" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_06_blue.tres" id="36_su46q"]
+[ext_resource type="Material" uid="uid://demp460gibrjj" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_11_light_purple.tres" id="37_am2k6"]
+[ext_resource type="Material" uid="uid://xv6qho1ecwfk" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_12_dark_purple.tres" id="38_s8xba"]
+[ext_resource type="Material" uid="uid://bkga6nakhddyq" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_13_blue_purple.tres" id="39_5npgk"]
+[ext_resource type="Material" uid="uid://mdxm73bdu34a" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_14_light_blue_cyan.tres" id="40_g0b3o"]
+[ext_resource type="Material" uid="uid://fgkl07h6ualr" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_15_dark_blue_cyan.tres" id="41_fpm4x"]
+[ext_resource type="Material" uid="uid://benkh1nmdmmmy" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_16_light_blue.tres" id="42_64v5f"]
+[ext_resource type="Material" uid="uid://cpmoddk7mh0mn" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_21_pink.tres" id="43_seuh0"]
+[ext_resource type="Material" uid="uid://dfu78pvga8xcf" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_22_hot_pink.tres" id="44_lcrgf"]
+[ext_resource type="Material" uid="uid://cpa1tbn3jw6uo" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_23_ligh_red.tres" id="45_0simb"]
+[ext_resource type="Material" uid="uid://b4apktis1jy2i" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_24_green_pistache.tres" id="46_gl2q7"]
+[ext_resource type="Material" uid="uid://dtipbtthtpa3s" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_25_green.tres" id="47_yriyd"]
+[ext_resource type="Material" uid="uid://bsxq2kxu7p1se" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_26_green_emerald.tres" id="48_0dmks"]
+[ext_resource type="Material" uid="uid://rc8aw552rnxn" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_31_light_yellow.tres" id="49_n6iip"]
+[ext_resource type="Material" uid="uid://cv8pmvsbnlk27" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_32_orange.tres" id="50_bnu0a"]
+[ext_resource type="Material" uid="uid://pn43cmgkdolu" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_33_red_orange.tres" id="51_wgxj5"]
+[ext_resource type="Material" uid="uid://17w1xehrdy00" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_34_white_grey.tres" id="52_f5v33"]
+[ext_resource type="Material" uid="uid://djm3igi10ul23" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_35_blue_grey.tres" id="53_2un1a"]
+[ext_resource type="Material" uid="uid://1d7gsbdhiiwu" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_36_dark_grey.tres" id="54_ildkq"]
+[ext_resource type="Material" uid="uid://chq8v5vmxh55l" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_41_sand_yellow.tres" id="55_0bgj1"]
+[ext_resource type="Material" uid="uid://bwikwllvekp6s" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_42_light_orange.tres" id="56_rb533"]
+[ext_resource type="Material" uid="uid://ba5tht4fdhkce" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_43_brown.tres" id="57_tl6rl"]
+[ext_resource type="Material" uid="uid://6mmjnssygqp4" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_44_white.tres" id="58_adt66"]
+[ext_resource type="Material" uid="uid://udn1nv1t5r75" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_45_grey.tres" id="59_1kaa2"]
+[ext_resource type="Material" uid="uid://diq8loxakgr03" path="res://addons/2024_10_16_gdp_blocks_color/material/unlit/mat_unlit_46_black.tres" id="60_rdh4e"]
+
+[resource]
+script = ExtResource("1_825ox")
+mat_lit_01_yellow = ExtResource("1_dhcgc")
+mat_lit_02_purple = ExtResource("2_ds8ug")
+mat_lit_03_blue_cyan = ExtResource("3_y4qu4")
+mat_lit_04_red = ExtResource("4_vut31")
+mat_lit_05_green = ExtResource("5_ce1ri")
+mat_lit_06_blue = ExtResource("6_c0ggi")
+mat_lit_11_light_purple = ExtResource("7_ssytv")
+mat_lit_12_dark_purple = ExtResource("8_pgw1x")
+mat_lit_13_blue_purple = ExtResource("9_xlce7")
+mat_lit_14_light_blue_cyan = ExtResource("10_hbanp")
+mat_lit_15_dark_blue_cyan = ExtResource("11_1s0rg")
+mat_lit_16_light_blue = ExtResource("12_pji4x")
+mat_lit_21_pink = ExtResource("13_kkd5w")
+mat_lit_22_hot_pink = ExtResource("14_24pe4")
+mat_lit_23_light_red = ExtResource("15_yi0mb")
+mat_lit_24_green_pistache = ExtResource("16_oghmb")
+mat_lit_25_green = ExtResource("17_7s8ot")
+mat_lit_26_green_emerald = ExtResource("18_itdcl")
+mat_lit_31_light_yellow = ExtResource("19_p120l")
+mat_lit_32_orange = ExtResource("20_hftw0")
+mat_lit_33_red_orange = ExtResource("21_frf0j")
+mat_lit_34_white_grey = ExtResource("22_t5n25")
+mat_lit_35_blue_grey = ExtResource("23_ne8i1")
+mat_lit_36_dark_grey = ExtResource("24_jglvx")
+mat_lit_41_sand_yellow = ExtResource("25_w0ihg")
+mat_lit_42_light_orange = ExtResource("26_du2v6")
+mat_lit_43_brown = ExtResource("27_5cshx")
+mat_lit_44_white = ExtResource("28_gx8wj")
+mat_lit_45_grey = ExtResource("29_w8npc")
+mat_lit_46_black = ExtResource("30_aah5u")
+mat_unlit_01_yellow = ExtResource("31_icg31")
+mat_unlit_02_purple = ExtResource("32_w4ygl")
+mat_unlit_03_blue_cyan = ExtResource("33_t2s64")
+mat_unlit_04_red = ExtResource("34_vtgqp")
+mat_unlit_05_green = ExtResource("35_dlwoh")
+mat_unlit_06_blue = ExtResource("36_su46q")
+mat_unlit_11_light_purple = ExtResource("37_am2k6")
+mat_unlit_12_dark_purple = ExtResource("38_s8xba")
+mat_unlit_13_blue_purple = ExtResource("39_5npgk")
+mat_unlit_14_light_blue_cyan = ExtResource("40_g0b3o")
+mat_unlit_15_dark_blue_cyan = ExtResource("41_fpm4x")
+mat_unlit_16_light_blue = ExtResource("42_64v5f")
+mat_unlit_21_pink = ExtResource("43_seuh0")
+mat_unlit_22_hot_pink = ExtResource("44_lcrgf")
+mat_unlit_23_light_red = ExtResource("45_0simb")
+mat_unlit_24_green_pistache = ExtResource("46_gl2q7")
+mat_unlit_25_green = ExtResource("47_yriyd")
+mat_unlit_26_green_emerald = ExtResource("48_0dmks")
+mat_unlit_31_light_yellow = ExtResource("49_n6iip")
+mat_unlit_32_orange = ExtResource("50_bnu0a")
+mat_unlit_33_red_orange = ExtResource("51_wgxj5")
+mat_unlit_34_white_grey = ExtResource("52_f5v33")
+mat_unlit_35_blue_grey = ExtResource("53_2un1a")
+mat_unlit_36_dark_grey = ExtResource("54_ildkq")
+mat_unlit_41_sand_yellow = ExtResource("55_0bgj1")
+mat_unlit_42_light_orange = ExtResource("56_rb533")
+mat_unlit_43_brown = ExtResource("57_tl6rl")
+mat_unlit_44_white = ExtResource("58_adt66")
+mat_unlit_45_grey = ExtResource("59_1kaa2")
+mat_unlit_46_black = ExtResource("60_rdh4e")
+metadata/_custom_type_script = "uid://b8oaacv14t6jj"

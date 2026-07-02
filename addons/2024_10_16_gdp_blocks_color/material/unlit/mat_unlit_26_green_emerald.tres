@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bsxq2kxu7p1se"]
+
+[resource]
+resource_name = "Mat_Unlit_26GreenEmerald"
+shading_mode = 0
+albedo_color = Color(0.14117645, 0.66666675, 0.6117647, 1)

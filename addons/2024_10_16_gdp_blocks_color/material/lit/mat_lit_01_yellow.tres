@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://5atgjfrfiiyf"]
+
+[resource]
+resource_name = "Mat_Unlit_01Yellow"
+albedo_color = Color(1, 1, 0, 1)

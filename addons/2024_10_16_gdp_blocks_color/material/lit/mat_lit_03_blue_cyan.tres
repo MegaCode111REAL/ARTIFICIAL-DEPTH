@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cubhihd8ss3q2"]
+
+[resource]
+resource_name = "Mat_Unlit_03BlueCyan"
+albedo_color = Color(0, 1, 1, 1)

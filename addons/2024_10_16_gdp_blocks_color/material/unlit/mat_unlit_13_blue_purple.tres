@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bkga6nakhddyq"]
+
+[resource]
+resource_name = "Mat_Unlit_13BluePurple"
+shading_mode = 0
+albedo_color = Color(0.4588236, 0.29411766, 0.7764707, 1)

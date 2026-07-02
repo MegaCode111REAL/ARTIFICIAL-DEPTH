@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://gomcl5gb7iwl"]
+
+[resource]
+resource_name = "Mat_Unlit_23LighRed"
+albedo_color = Color(0.9960785, 0.32549018, 0.28235295, 1)

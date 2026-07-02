@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://benkh1nmdmmmy"]
+
+[resource]
+resource_name = "Mat_Unlit_16LightBlue"
+shading_mode = 0
+albedo_color = Color(0.14509802, 0.69019616, 1, 1)

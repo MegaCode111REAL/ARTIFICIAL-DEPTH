@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://3uk2mbct730w"]
+
+[resource]
+resource_name = "Mat_Unlit_35BlueGrey"
+albedo_color = Color(0.54509807, 0.6470589, 0.6941177, 1)

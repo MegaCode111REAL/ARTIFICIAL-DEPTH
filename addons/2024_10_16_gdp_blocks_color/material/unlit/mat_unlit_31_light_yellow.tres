@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://rc8aw552rnxn"]
+
+[resource]
+resource_name = "Mat_Unlit_31LightYellow"
+shading_mode = 0
+albedo_color = Color(1, 1, 0.29803923, 1)

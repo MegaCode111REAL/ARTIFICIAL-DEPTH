@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dfu78pvga8xcf"]
+
+[resource]
+resource_name = "Mat_Unlit_22HotPink"
+shading_mode = 0
+albedo_color = Color(1, 0.43921575, 0.63921577, 1)

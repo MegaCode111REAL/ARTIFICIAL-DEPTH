@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b4apktis1jy2i"]
+
+[resource]
+resource_name = "Mat_Unlit_24GreenPistache"
+shading_mode = 0
+albedo_color = Color(0.60784316, 0.8549021, 0.34117648, 1)

@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://oe5bgqdbnf66"]
+
+[resource]
+resource_name = "Mat_Unlit_32Orange"
+albedo_color = Color(0.9960785, 0.6705883, 0.13725488, 1)

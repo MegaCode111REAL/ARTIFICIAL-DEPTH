@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://2lmyvd3qudib"]
+
+[ext_resource type="Script" uid="uid://c2e1t8dksggfp" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://obkakg7tlk3b" path="res://fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://cdm7och8pub3o" path="res://icon.svg" id="2_jix8l"]
+[ext_resource type="Theme" uid="uid://c6jbl6qemxvh0" path="res://font.tres" id="3_jix8l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rhts7"]
+font = ExtResource("2_fu7sn")
+font_size = 41
+shadow_color = Color(0.49019608, 0, 1, 0)
+shadow_offset = Vector2(0, 0)
+
+[node name="Control" type="Control" unique_id=2001129665]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1791619880]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.031374663, 3.217691e-05, 0.081616245, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=810846521]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jix8l")
+stretch_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=281827040]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1758723727]
+layout_mode = 2
+alignment = 1
+
+[node name="title" type="Label" parent="CenterContainer/VBoxContainer" unique_id=2057927853]
+layout_mode = 2
+text = "ARTIFICIAL DEPTH"
+label_settings = SubResource("LabelSettings_rhts7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer" unique_id=1297718913]
+layout_mode = 2
+
+[node name="start" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1224057649]
+layout_mode = 2
+theme = ExtResource("3_jix8l")
+action_mode = 0
+text = "start"
+flat = true
+
+[node name="settings" type="Button" parent="CenterContainer/VBoxContainer" unique_id=65234141]
+layout_mode = 2
+theme = ExtResource("3_jix8l")
+text = "settings"
+flat = true
+
+[node name="quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=287241443]
+layout_mode = 2
+theme = ExtResource("3_jix8l")
+text = "quit"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1866943195]
+autoplay = true

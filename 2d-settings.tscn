@@ -1,0 +1,162 @@
+[gd_scene format=3 uid="uid://ce5un62bhk8cd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.047058824, 0, 0.101960786, 0.09411765)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dy7ct"]
+content_margin_left = 10.0
+content_margin_top = 4.0
+content_margin_right = 10.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.02745098)
+border_width_left = 1
+border_width_right = 1
+border_color = Color(0.175, 0.175, 0.175, 1)
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0o4t1"]
+content_margin_left = 10.0
+content_margin_top = 4.0
+content_margin_right = 10.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.019607844)
+border_width_top = 2
+border_color = Color(1, 1, 1, 0.09019608)
+corner_detail = 1
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_8qtwp"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 0.0
+color = Color(1, 1, 1, 0)
+grow_begin = 0.0
+grow_end = 0.0
+thickness = 0
+
+[node name="settings" type="Control" unique_id=860892835]
+layout_mode = 3
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsContainer" type="TabContainer" parent="." unique_id=1746553669]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8qtwp")
+theme_override_styles/tab_unselected = SubResource("StyleBoxFlat_dy7ct")
+theme_override_styles/tab_selected = SubResource("StyleBoxFlat_0o4t1")
+current_tab = 0
+
+[node name="Rendering" type="CenterContainer" parent="SettingsContainer" unique_id=408228558]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContainer/Rendering" unique_id=1166446365]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=1733315746]
+layout_mode = 2
+text = "Resolution"
+
+[node name="OptionButton" type="OptionButton" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=854843339]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "1280×720"
+popup/item_0/id = 0
+popup/item_1/text = "1920×1080"
+popup/item_1/id = 1
+popup/item_2/text = "2650×1440"
+popup/item_2/id = 2
+
+[node name="Label2" type="Label" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=1578896673]
+layout_mode = 2
+text = "Window Mode"
+
+[node name="OptionButton2" type="OptionButton" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=1023921474]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Borderless fullscreen"
+popup/item_2/id = 2
+
+[node name="CheckButton" type="CheckButton" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=1765053343]
+layout_mode = 2
+text = "VSync"
+
+[node name="Label3" type="Label" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=495270734]
+layout_mode = 2
+text = "Render Scale"
+
+[node name="CheckButton3" type="CheckButton" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=769246561]
+layout_mode = 2
+text = "Show FPS"
+flat = true
+
+[node name="MinimumWidth" type="HSeparator" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=2045263358]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 0
+theme_override_styles/separator = SubResource("StyleBoxLine_8qtwp")
+
+[node name="HSlider" type="HSlider" parent="SettingsContainer/Rendering/VBoxContainer" unique_id=1384949475]
+layout_mode = 2
+min_value = 70.0
+max_value = 120.0
+value = 70.0
+rounded = true
+scrollable = false
+
+[node name="Audio" type="ScrollContainer" parent="SettingsContainer" unique_id=1905624143]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="SettingsContainer/Audio" unique_id=2070359772]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContainer/Audio/CenterContainer" unique_id=258140882]
+layout_mode = 2
+
+[node name="Audio3" type="ScrollContainer" parent="SettingsContainer" unique_id=214717514]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="SettingsContainer/Audio3" unique_id=83862301]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsContainer/Audio3/CenterContainer" unique_id=1190224674]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="." unique_id=1554937942]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -17.0
+offset_bottom = 31.0
+grow_horizontal = 0
+text = " × "
+flat = true

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://mdxm73bdu34a"]
+
+[resource]
+resource_name = "Mat_Unlit_14LightBlueCyan"
+shading_mode = 0
+albedo_color = Color(0.5686275, 0.96470594, 0.9960785, 1)

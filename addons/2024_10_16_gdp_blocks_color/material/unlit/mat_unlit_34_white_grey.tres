@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://17w1xehrdy00"]
+
+[resource]
+resource_name = "Mat_Unlit_34WhiteGrey"
+shading_mode = 0
+albedo_color = Color(0.90980405, 0.94509816, 0.9568628, 1)

@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dmwuhvx3dgfda"]
+
+[resource]
+resource_name = "Mat_Unlit_15DarkBlueCyan"
+albedo_color = Color(0.1490196, 0.81176484, 0.90980405, 1)

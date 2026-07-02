@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://c6jbl6qemxvh0"]
+
+[ext_resource type="FontFile" uid="uid://obkakg7tlk3b" path="res://fonts/Share_Tech_Mono/ShareTechMono-Regular.ttf" id="1_7j002"]
+
+[resource]
+default_font = ExtResource("1_7j002")
+Button/font_sizes/font_size = 18

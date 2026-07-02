@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bwikwllvekp6s"]
+
+[resource]
+resource_name = "Mat_Unlit_42LightOrange"
+shading_mode = 0
+albedo_color = Color(0.9803922, 0.67843145, 0.33333334, 1)
