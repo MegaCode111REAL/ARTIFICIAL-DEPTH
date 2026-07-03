@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 const SPEED = 6.0
-const JUMP_VELOCITY = 6.0
+const JUMP_VELOCITY = 7.0
 const GRAVITY = 20.0
 const MOUSE_SENS = 0.0025
 
@@ -15,6 +15,7 @@ var falling_out := false
 var last_print := ""
 
 @onready var head = $Head
+@onready var discovered2d = false
 @onready var loaded_chunks = $"../LoadedChunks"
 @onready var level1 = loaded_chunks.get_child(1)
 @onready var fps_camera = $Head/Camera3D
@@ -73,6 +74,9 @@ func _input(event):
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 	if Input.is_action_just_pressed("toggle_dimension"):
+		if !discovered2d:
+			print('naughty naughty...')
+			return
 		toggle_dimension()
 
 
@@ -80,8 +84,8 @@ func _physics_process(delta):
 	if !falling_out and global_position.y < -20:
 		falling_out = true
 		await gui.blackout(1.0)
-		await get_tree().create_timer(0.5).timeout
-		get_tree().quit()
+		await timer(0.5)
+		get_tree().reload_current_scene()
 	
 	if !is_on_floor():
 		velocity.y -= GRAVITY * delta
@@ -147,7 +151,21 @@ func update_interaction_ui():
 
 	interact_label.position = screen_pos - (interact_label.size / Vector2(2, 2))
 
-	interact_label.visible = true
+	var distance = global_position.distance_to(
+		currentInteractable.global_position
+	)
+
+
+	if distance > interact_distance:
+		interact_label.modulate.a = 0.5
+		interact_label.scale = Vector2(1, 1)
+	else:
+		interact_label.scale = Vector2(1.2, 1.2)
+		interact_label.modulate.a = 1
+	if !fps_camera.is_position_behind(currentInteractable.global_position):
+		interact_label.visible = true
+	else:
+		interact_label.visible = false
 
 func try_interact():
 
@@ -172,6 +190,8 @@ func try_interact():
 
 		"paper":
 			print('Paper!')
+			gui.show_paper('patch: 1', 'Removed 2d mode on F key.')
+			discovered2d = true
 		_:
 			print(
 				"No interaction for ",
@@ -242,9 +262,7 @@ func teleport_player_to_top(player: CharacterBody3D, object: StaticBody3D):
 func toggle_dimension():
 	rotation_degrees = Vector3(0,0,0)
 	print(box_collision.disabled)
-#	if can_switch_to_2d():
-#		print("NO SWITCHING")
-#		return
+	
 	if mode_2d and last_valid_platform:
 		teleport_player_to_top(self, last_valid_platform)
 	

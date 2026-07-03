@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://cyll5s2vwbra3"]
 
+[ext_resource type="FontFile" uid="uid://dc3crri0v4rhr" path="res://fonts/Space_Mono/SpaceMono-Bold.ttf" id="1_b84ys"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_8ww3a"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_b84ys"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8ww3a"]
 
 [node name="Level1" type="Node3D" unique_id=775448867]
 
@@ -176,3 +180,33 @@ shape = SubResource("BoxShape3D_8ww3a")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="camera" unique_id=803230256]
 mesh = SubResource("BoxMesh_b84ys")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1240005370]
+transform = Transform3D(4.360568, 0, 0, 0, 4.6720037, 0, 0, 0, 0.21865702, 48.549824, 5.3309517, -21.043266)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1721265812]
+mesh = SubResource("BoxMesh_8ww3a")
+
+[node name="Label3D" type="Label3D" parent="StaticBody3D" unique_id=1470540458]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0.5267868)
+text = "YOU WIN"
+font = ExtResource("1_b84ys")
+
+[node name="Label3D2" type="Label3D" parent="StaticBody3D" unique_id=591421249]
+transform = Transform3D(-0.99999774, 0, 0.0019721093, 0, 1, 0, -0.0019721093, 0, -0.99999785, 0, 0, -0.5461197)
+text = "YOU
+actually
+won lol"
+font = ExtResource("1_b84ys")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1829370027]
+transform = Transform3D(0.899695, 0, -0.43651915, 0.11620678, 0.9639145, 0.23950988, 0.4207671, -0.2662123, 0.867229, 46.734337, 6.973588, -18.620272)
+spot_range = 6.9294176
+spot_angle = 28.864874
+spot_angle_attenuation = 0.19614626
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=407982497]
+transform = Transform3D(0.871538, -0.16788495, 0.46069103, -0.05658693, 0.89884084, 0.43460685, -0.48705184, -0.4048455, 0.7738738, 51.018505, 7.201647, -18.620272)
+spot_range = 6.9294176
+spot_angle = 28.864874
+spot_angle_attenuation = 0.19614626

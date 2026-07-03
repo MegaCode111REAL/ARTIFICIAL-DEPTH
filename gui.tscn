@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://c68fmqg8i6p87" path="res://gui.gd" id="1_80edf"]
 [ext_resource type="Script" uid="uid://5gx0pnf83idr" path="res://black.gd" id="2_6lon5"]
 [ext_resource type="Texture2D" uid="uid://qk6lj82nna5r" path="res://addons/awesome_input_icons/assets/input_icons/keyboard/e.svg" id="3_q8o8l"]
+[ext_resource type="FontFile" uid="uid://cpjycon2oq1hv" path="res://fonts/Space_Mono/SpaceMono-Regular.ttf" id="4_cor1f"]
+[ext_resource type="Script" uid="uid://cgd6xt8byaq6s" path="res://paper.gd" id="4_jf511"]
+[ext_resource type="Script" uid="uid://x14bkna5o7q1" path="res://back-paper.gd" id="5_u77ya"]
+[ext_resource type="Texture2D" uid="uid://dafbbcjx41pes" path="res://Crosshair 2.png" id="7_0wv8u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k6omp"]
 content_margin_left = 0.0
@@ -24,6 +28,30 @@ content_margin_bottom = 0.0
 bg_color = Color(0, 0, 0, 1)
 corner_detail = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u77ya"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.25490198)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jf511"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.86726046, 0.86726075, 0.8672606, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 7
+
 [node name="gui" type="CanvasLayer" unique_id=1260856799]
 script = ExtResource("1_80edf")
 
@@ -37,6 +65,7 @@ anchor_bottom = 0.95
 theme_override_styles/panel = SubResource("StyleBoxFlat_k6omp")
 
 [node name="black" type="Panel" parent="." unique_id=569770037]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -47,6 +76,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_6lon5")
 script = ExtResource("2_6lon5")
 
 [node name="PressEDialogue" type="HBoxContainer" parent="." unique_id=160933205]
+visible = false
 offset_right = 154.0
 offset_bottom = 23.0
 
@@ -62,3 +92,92 @@ expand_mode = 2
 [node name="Label2" type="Label" parent="PressEDialogue" unique_id=15621927]
 layout_mode = 2
 text = "to interact"
+
+[node name="Paper" type="Panel" parent="." unique_id=393365986]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u77ya")
+script = ExtResource("4_jf511")
+
+[node name="Paper" type="Panel" parent="Paper" unique_id=105370177]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.05
+anchor_right = 0.7
+anchor_bottom = 0.95
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_jf511")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Paper/Paper" unique_id=30036366]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Paper/Paper/VBoxContainer" unique_id=629172684]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Paper/Paper/VBoxContainer/CenterContainer" unique_id=2005666945]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_cor1f")
+theme_override_font_sizes/font_size = 50
+text = "Title"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="text" type="Label" parent="Paper/Paper/VBoxContainer" unique_id=1856677]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_cor1f")
+theme_override_font_sizes/font_size = 18
+text = "Text"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Paper" unique_id=570284726]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "🡐 Back"
+script = ExtResource("5_u77ya")
+
+[node name="Control" type="Control" parent="." unique_id=218015261]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=477292130]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.02, 0.02)
+texture = ExtResource("7_0wv8u")
+expand_mode = 1
+stretch_mode = 3
