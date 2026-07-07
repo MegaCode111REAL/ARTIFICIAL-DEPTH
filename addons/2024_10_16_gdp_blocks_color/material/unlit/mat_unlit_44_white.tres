@@ -3,3 +3,4 @@
 [resource]
 resource_name = "Mat_Unlit_44White"
 shading_mode = 0
+disable_ambient_light = true

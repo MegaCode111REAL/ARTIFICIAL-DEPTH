@@ -156,6 +156,7 @@ offset_left = 10.0
 offset_top = 10.0
 offset_right = 8.0
 offset_bottom = 8.0
+action_mode = 0
 text = "🡐 Back"
 script = ExtResource("5_u77ya")
 
